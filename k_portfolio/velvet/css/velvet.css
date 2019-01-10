@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* reset */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700,800');
+html{overflow-y:scroll}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+body,h1,h2,h3,h4,h5,h6,input,textarea,select,button,table{font-family:'Open Sans',AppleGothic,sans-serif;font-size:12px}
+img,fieldset{border:0}
+img{vertical-align:top}
+ul,ol,li{list-style:none}
+em,address{font-style:normal}
+table{border-collapse:collapse}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+hr{display:none}
+.blind{display:block;position:absolute;left:0;top:-9999em;overflow:hidden}
+.skip a{display:block;position:absolute;left:0;top:-9999em;z-index:9999;width:100%;background-color:navy;color:white;text-align:center;line-height:2.2}
+.skip a:focus{top:0}
+
+/* style */
+body {padding: 50px 0; background-color: #dcdcdc}
+.wrap {width: 1170px; margin: 0 auto; background-color: #fff}
+#header {padding-bottom: 50px; *zoom: 1}
+#header:after {content: ''; display: block; clear: both}
+#header .logo {float: left; margin: 60px 0 0 14px}
+#header .lnb {float: right; margin: 80px 0 0 0}
+#header .lnb > li {position: relative; float: left; padding-right: 22px; background: url(../img/bg_lnb.png) no-repeat 100% 50%}
+#header .lnb > li.last {padding-right: 0; background: none}
+#header .lnb li a {display: block; padding: 0 30px; color: #000; font-size: 14px; font-weight: 700; text-decoration: none; text-transform: uppercase; line-height: 36px}
+#header .lnb li a:hover {color: #890009}
+#header .lnb > li.last > a {padding-right: 14px}
+#header .lnb li ul {position: absolute}
+#header .lnb > li > ul {top: 36px; left: 50%; width: 110px; margin-left: -66px; padding-top: 24px}
+#header .lnb > li > ul > li {position: relative; background-color: #000}
+#header .lnb > li > ul > li.first {padding-top: 14px}
+#header .lnb > li > ul > li.last {padding-bottom: 14px}
+#header .lnb > li > ul > li > a {padding: 0; color: #a8a8a8; text-align: center}
+#header .lnb > li > ul > li > a:hover {color: #efefef}
+#header .lnb > li > ul li ul {left: 110px; top: 0;}
+#header .lnb > li > ul li ul li {background-color: #ddd}
+
+#container {}
+#container .con_contact {margin-bottom: 100px; *zoom: 1}
+#container .con_contact:after {content: ''; display: block; clear: both}
+#container .con_contact .spot {float: left; width: 768px; height: 540px; margin-left: 50px; background: url(../img/index-01.jpg) no-repeat 50% 0}
+#container .con_contact .spot .lead {width: 580px; margin: 200px 0 0 60px; color: #313131; font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 46px; text-transform: uppercase; line-height: 64px; letter-spacing: .1em}
+#container .con_contact .spot .lead em {color: #fff}
+#container .con_contact .spot .lead em span {display: inline-block; width: 64px; height: 64px; border-radius: 50%; background-color: #fff; color: #cfcfcf; text-align: center}
+#container .con_contact .spot .website {margin: 150px 0 0 60px; font-size: 19px; font-weight: 700; text-transform: uppercase; letter-spacing: .15em}
+#container .con_contact .spot .website a {color: #fff}
+#container .con_contact .spot .website a:hover {color: #983a42}
+#container .con_contact .contact {float: right; width: 250px; margin-right: 50px}
+#container .con_contact .contact .tle {margin: 25px 0 35px; color: #222; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; line-height: 24px}
+#container .con_contact .contact .item {margin-bottom: 48px}
+#container .con_contact .contact .item.last {margin-bottom: 0}
+#container .con_contact .contact .item .item_sns {}
+#container .con_contact .contact .item .item_sns li {display: inline; margin-right: 17px}
+#container .con_contact .contact .item .item_sns li a {display: inline-block; width: 26px; height: 26px; border-radius: 50%; background-color: #c7c7c7; color: #fff; font-size: 1.2em; text-align: center; line-height: 26px}
+#container .con_contact .contact .item .item_sns li a:hover {background-color: #983a42}
+#container .con_contact .contact .item .item_contact {color: #983a42; font-size: 16px; font-weight: 600}
+#container .con_contact .contact .item .item_contact li {margin-bottom: 14px; line-height: 26px}
+#container .con_contact .contact .item .item_contact li.last {margin-bottom: 0}
+#container .con_contact .contact .item .item_contact i {width: 25px}
+#container .con_contact .contact .item .item_contact a {color: #983a42}
+#container .con_contact .contact .item address {color: #7c7c7c; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; line-height: 1.8}
+
+#container .con_welcome,
+#container .con_profile,
+#container .con_choose,
+#container .con_article,
+#container .con_map {width: 1070px; margin: 0 auto; text-align: center}
+#container .thumb {position: relative}
+#container .thumb .order {position: absolute; right: 0; bottom: 0; width: 350px; border-bottom: 1px solid #bd9096; color: #bd9096; font: 30px/60px Montserrat,sans-serif; text-align: right}
+#container .tle {margin: 50px 0 24px; color: #333; font: 700 16px/30px 'Open Sans',sans-serif; text-transform: uppercase; letter-spacing: .1em}
+#container .desc {width: 500px; margin: 0 auto 50px; color: #666; font-size: 16px; text-align: justify; line-height: 25px}
+#container .more {margin-bottom: 110px; font-size: 13px; font-weight: 800; text-transform: uppercase; line-height: 16px; letter-spacing: .1em}
+#container .more a {display: inline-block; padding: 14px 20px; border: 1px solid #a6a6a6; color: #222; text-decoration: none}
+#container .more a:hover {border-color: #222; background-color: #222; color: #fff}
+
+#container .con_profile {position: relative; padding: 110px 0 120px; margin-bottom: 110px; background-color: #f7f7f5}
+#container .con_profile .tle {position: relative}
+#container .con_profile .tle .bar {position: absolute; top: -30px; left: 50%; width: 70px; height: 4px; margin-left: -35px; background-color: #8e2730}
+#container .con_profile .item {position: relative; z-index: 1; margin-left: 100px; margin-top: 50px; text-align: left}
+#container .con_profile .item dl {margin-bottom: 28px; *zoom: 1}
+#container .con_profile .item dl:after {content: ''; display: block; clear: both}
+#container .con_profile .item dt {float: left; margin-right: 5px; width: 220px; border-bottom: 1px dotted #333; color: #8e2730; font-size: 14px; font-weight: 700; text-transform: uppercase}
+#container .con_profile .item dt strong {position: relative; top: 4px; background-color: #f7f7f5}
+#container .con_profile .item dd {position: relative; top: 4px; float: left; color: #333; font-size: 15px}
+#container .con_profile .bg {position: absolute; right: 0; bottom: 0; width: 260px}
+#container .con_profile .bg img {width: 100%}
+
+#container .con_choose {}
+#container .con_choose .thumb .order {bottom: 15px; color: #c2c2c2; border-color: #c2c2c2}
+#container .con_choose .area {margin: 0 -41px}
+#container .con_choose .area:after {content: ''; display: block; clear: both}
+#container .con_choose .item {float: left; width: 300px; border: 1px solid #ddd; margin: 0 41px}
+#container .con_choose .item dt {margin-bottom: 30px}
+#container .con_choose .item dt img {width: 100%}
+#container .con_choose .item dd .birth {margin-bottom: 7px; color: #222; font-size: 16px; font-weight: 700; text-transform: uppercase; line-height: 24px}
+#container .con_choose .item dd .state {margin-bottom: 26px; color: #c7c7c7; font-size: 13px; font-weight: 700; text-transform: uppercase; line-height: 15px}
+#container .con_choose .details {margin-bottom: -22px; font-size: 13px; font-weight: 800; text-transform: uppercase; line-height: 16px; letter-spacing: .1em}
+#container .con_choose .details a {display: inline-block; padding: 14px 20px; border: 1px solid #ddd; background-color: #fff; color: #222; text-decoration: none}
+#container .con_choose .details a:hover {border-color: #222; background-color: #222; color: #fff}
+#container .con_choose .more {padding: 70px 0 100px; margin-bottom: 0; margin-top: 22px}
+
+#container .con_article {padding: 110px 0 0; margin-bottom: 220px; height: 564px; background-color: #f9f8f8}
+#container .con_article .tle {position: relative}
+#container .con_article .tle .bar {position: absolute; top: -30px; left: 50%; width: 70px; height: 4px; margin-left: -35px; background-color: #8e2730}
+#container .con_article .item {position: relative; width: 1110px; overflow: hidden; margin-left: -20px}
+#container .con_article .item .slider_item {width: 2140px; *zoom: 1}
+#container .con_article .item .slider_item:after {content: ''; display: block; clear: both}
+#container .con_article .item .slider_item li {float: left; width: 535px}
+#container .con_article .item .slider_item li.left {text-align: left}
+#container .con_article .item .slider_item li.right {text-align: right}
+#container .con_article .item .slider_item li .inn {padding: 0 95px}
+#container .con_article .item .slider_item li .tle {font-size: 14px}
+#container .con_article .item .slider_item li .tle a {color: #333}
+#container .con_article .item .slider_item li .text {color: #777; font-size: 14px; line-height: 1.6}
+#container .con_article .item .slider_btn {}
+#container .con_article .item .slider_btn li {position: absolute; top: 70px}
+#container .con_article .item .slider_btn li.prev {left: 0}
+#container .con_article .item .slider_btn li.next {right: 0}
+#container .con_article .item .slider_btn li button {border: 0; background: none; color: #d7ccc2; font-size: 60px; cursor: pointer}
+#container .con_article .thumb {margin-top: -35px; margin-bottom: -125px}
+#container .con_article .thumb .order {bottom: 12px; color: #d7ccc2; border-color: #d7ccc2}
+
+#container .con_map {border: 1px solid #ddd}
+#container .con_map #map {width: 100%; height: 380px}
+
+#footer {padding: 70px 0 80px}
+#footer .up {position: fixed; right: 40px; bottom: 40px}
+#footer .up a {display: block; width: 56px; height: 56px; border-radius: 50%; background-color: #333; color: #fff; font-size: 30px; text-align: center; line-height: 56px}
+#footer .up a:hover {background-color: #983a42}
+#footer .copy {color: #333; font-size: 14px; font-weight: 700; text-transform: uppercase; text-align: center; line-height: 27px}
+#footer .copy .lnk {display: inline-block; padding-left: 20px; margin-left: 16px; border-left: 1px solid #555}
+#footer .copy a {color: #333}
